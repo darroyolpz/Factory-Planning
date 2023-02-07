@@ -33,6 +33,7 @@ Set tORDERS = Range("orders_table").ListObject
 '-------------------------------------------------------------------------'
 'Clear filters'
 tSales.AutoFilter.ShowAllData
+tSales.Sort.SortFields.Clear
 
 'Sort by CO date'
 tSales.Sort.SortFields.Add Key:=Range("sales_table[[CO Date]]"), _
